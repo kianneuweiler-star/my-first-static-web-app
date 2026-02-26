@@ -1,8 +1,9 @@
 <?php
-$host = 'localhost';
+$host = 'geldmaschine123.database.windows.net';
 $dbname = 'php_aufgabe';
-$user = 'root';
-$pass = ''; 
+$user = 'admins';
+$pass = 'Administrator10!'; 
+
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);
@@ -10,4 +11,5 @@ try {
 } catch (PDOException $e) {
     die("Verbindung fehlgeschlagen: " . $e->getMessage());
 }
+
 ?>
